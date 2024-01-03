@@ -1,5 +1,7 @@
 # start by pulling the python image
 FROM python:3.8-alpine
+RUN apk update
+RUN apk add make automake gcc g++ subversion python3-dev
 
 # copy the requirements file into the image
 COPY ./requirements.txt /app/requirements.txt
