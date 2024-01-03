@@ -1,4 +1,6 @@
 ez_setup
+torch
 numpy
+stable-baselines3[extra]
 flask[async]
 flask-cors
