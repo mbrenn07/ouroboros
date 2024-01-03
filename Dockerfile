@@ -1,5 +1,5 @@
 # start by pulling the python image
-FROM python:3.7
+FROM python:3.10
 RUN apk update
 RUN apk add make automake gcc g++ subversion python3-dev
 
