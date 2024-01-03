@@ -1,6 +1,5 @@
 ez_setup
 matplotlib
-pygame
 gymnasium
 stable-baselines3[extra]
 stable-baselines3[extra]
