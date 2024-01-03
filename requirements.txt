@@ -1,7 +1,4 @@
 ez_setup
-matplotlib
-gymnasium
-stable-baselines3[extra]
-stable-baselines3[extra]
+numpy
 flask[async]
 flask-cors
