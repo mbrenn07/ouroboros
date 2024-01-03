@@ -7,6 +7,9 @@ COPY ./requirements.txt /app/requirements.txt
 # switch working directory
 WORKDIR /app
 
+EXPOSE 5000
+ENV FLASK_APP=server.py
+
 # install the dependencies and packages in the requirements file
 RUN pip install -r requirements.txt
 
@@ -14,6 +17,5 @@ RUN pip install -r requirements.txt
 COPY . /app
 
 # configure the container to run in an executed manner
-ENTRYPOINT [ "python" ]
-
-CMD ["server.py" ]
+ENTRYPOINT [ "flask"]
+CMD [ "run", "--host", "0.0.0.0" ]
