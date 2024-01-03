@@ -9,7 +9,7 @@ import axios from 'axios';
 
 
 const baseInstance = axios.create({
-    baseURL: "http://localhost:5000/",
+    baseURL: "https://ouroboros-ujuh2f4o4a-uk.a.run.app/",
     timeout: undefined
 });
 
